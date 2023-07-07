@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class SearchStrings {
     public static void main(String args[]){
@@ -14,6 +15,7 @@ class SearchStrings {
         char target = data.next().charAt(0);
 
         System.out.println(search(text, target));
+        System.out.println(Arrays.toString(text.toCharArray()));
 
     }
 
