@@ -22,7 +22,7 @@ class playArray {
         // roll_numbers[0] = 3;
         // this is now declared in the heap memory
 
-        System.out.println(roll_numes[0]); //output is null
+        System.out.println(Arrays.toString(roll_numes)); //output is null
 
         // Getting user input in loops
         int[] arr = new int[4];
@@ -30,8 +30,13 @@ class playArray {
         for(int i = 0; i < arr.length; i++){
             arr[i] = in.nextInt();
         }
-        for(int i = 0; i < arr.length; i++){
-            System.out.println(arr[i]);
+        // for(int i = 0; i < arr.length; i++){
+        //     System.out.println(arr[i]);
+        // }
+
+        // With enhance for loop
+        for(int num : arr ){
+            System.out.println(" "+ num);
         }
     }
 }
