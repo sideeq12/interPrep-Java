@@ -12,7 +12,7 @@ class Binsearch {
         // beginning of array
         int start = 0;
         int end = arr.length -1;
-         while(start < end ){
+         while(start <= end ){
             // take the middle
             int middle =  start + (end-start)/2;
             if(arr[middle ] > target){
