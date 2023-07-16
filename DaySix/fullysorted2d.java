@@ -1,7 +1,16 @@
+import java.util.Arrays;
+
 class fullysorted2d {
     public static void main(String args[]){
-        
-        System.out.println("the result is ");    
+        int[][] list = {
+            {1,2,3,4},
+            {5,6,7,8},
+            {9,10,11,12},
+            {13,14,15,16}
+        };
+        int target = 3;
+        int[] result = fullsearch(list, target);
+        System.out.println(Arrays.toString(result));    
     }
     // simple binsearch within an array specifying the range of the search
     static int[] binsearch(int[][] matrixes, int row, int colstart, int cEnd, int target){
