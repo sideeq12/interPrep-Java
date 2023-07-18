@@ -1,7 +1,7 @@
 public class greaterletter {
     public static void main(String args[]){
     char[] list = { 'a', 'b', 'c', 'd'};
-    char target = 'b';
+    char target = 'a';
     System.out.println(nextGreatestLetter(list, target));
 
     }
