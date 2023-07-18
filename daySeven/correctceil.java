@@ -12,6 +12,11 @@ public class correctceil {
     static int ceiling(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;
+
+        // firstly checking if the target greater than the last element of the array
+        if(target > arr[end]){
+            return -1;
+        }
         while(start <= end ){
             int mid = start + (end - end )/2;
             if(arr[mid] < target){
